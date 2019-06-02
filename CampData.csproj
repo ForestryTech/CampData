@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B7367C9-3467-4A13-A684-678A32BF9964}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CampData</RootNamespace>
+    <AssemblyName>CampData</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEditInmate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditInmate.Designer.cs">
+      <DependentUpon>AddEditInmate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditStaff.Designer.cs">
+      <DependentUpon>AddEditStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditVehicle.Designer.cs">
+      <DependentUpon>AddEditVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CampRoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CampRoster.Designer.cs">
+      <DependentUpon>CampRoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="campSnapShot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="campSnapShot.Designer.cs">
+      <DependentUpon>campSnapShot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counts.cs" />
+    <Compile Include="Crew.cs" />
+    <Compile Include="crewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crewForm.Designer.cs">
+      <DependentUpon>crewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeatingChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeatingChart.Designer.cs">
+      <DependentUpon>FormSeatingChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVehicle.Designer.cs">
+      <DependentUpon>FormVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hookline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hookline.Designer.cs">
+      <DependentUpon>hookline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InmateData.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personnel.Designer.cs">
+      <DependentUpon>personnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pilotrockdataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pilotrockdataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pilotrockdataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pilotrockdataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pilotrockdataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pilotrockdataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pilotrockdataDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pilotrockdataDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintCamp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seatingChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seatingChart.Designer.cs">
+      <DependentUpon>seatingChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnapShot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnapShot.Designer.cs">
+      <DependentUpon>SnapShot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff.cs" />
+    <Compile Include="Vehicle.cs" />
+    <EmbeddedResource Include="AddEditInmate.resx">
+      <DependentUpon>AddEditInmate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditStaff.resx">
+      <DependentUpon>AddEditStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditVehicle.resx">
+      <DependentUpon>AddEditVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CampRoster.resx">
+      <DependentUpon>CampRoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="campSnapShot.resx">
+      <DependentUpon>campSnapShot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crewForm.resx">
+      <DependentUpon>crewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeatingChart.resx">
+      <DependentUpon>FormSeatingChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVehicle.resx">
+      <DependentUpon>FormVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hookline.resx">
+      <DependentUpon>hookline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personnel.resx">
+      <DependentUpon>personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SnapShot.resx">
+      <DependentUpon>SnapShot.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="pilotrockdataDataSet.xsc">
+      <DependentUpon>pilotrockdataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pilotrockdataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pilotrockdataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pilotrockdataDataSet.xss">
+      <DependentUpon>pilotrockdataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pilotrockdataDataSet1.xsc">
+      <DependentUpon>pilotrockdataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="pilotrockdataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pilotrockdataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pilotrockdataDataSet1.xss">
+      <DependentUpon>pilotrockdataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="pilotrockdataDataSet2.xsc">
+      <DependentUpon>pilotrockdataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="pilotrockdataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pilotrockdataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pilotrockdataDataSet2.xss">
+      <DependentUpon>pilotrockdataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="pilotrockdataDataSet3.xsc">
+      <DependentUpon>pilotrockdataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="pilotrockdataDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pilotrockdataDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pilotrockdataDataSet3.xss">
+      <DependentUpon>pilotrockdataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\InmateData.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pilotrockdata.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
